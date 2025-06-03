@@ -1,9 +1,9 @@
 // === WORD BANK ARRAYS ===
 const subjects = ["The monkey", "My grandma", "A robot", "The cat", "A pirate", "The teacher", "A banana", "A dog"];
-const verbs = ["ate", "danced with", "hugged", "kicked", "saw", "sang to", "painted"];
+const verbs = ["ate", "danced with", "hugged", "kicked", "saw", "sang to", "painted", "jumped","ran"];
 const adjectives = ["a weird", "a funny", "a slimy", "a giant", "a sleepy", "a glowing", "a scary"];
-const nouns = ["turtle", "sandwich", "alien", "sock", "carrot", "balloon", "penguin"];
-const places = ["on the moon", "in the fridge", "at school", "in my shoes", "on TV", "at the zoo", "in space"];
+const nouns = ["turtle", "sandwich", "alien", "sock", "carrot", "balloon", "penguin", "fish"];
+const places = ["on the moon", "in the fridge", "at school", "in my shoes", "on TV", "at the zoo", "in space", "in the ocean", "on the beach"];
 
 // === CURRENT INDEX TRACKERS ===
 let currentIndices = [0, 0, 0, 0, 0]; // Tracks current index for each column.
