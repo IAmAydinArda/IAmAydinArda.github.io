@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>See 'N Say Story Maker</title>
+  <link rel="stylesheet" href="qtpie.css" />
+</head>
+<body>
+  <h1>See 'N Say Story Maker</h1>
+  
+  <!-- Story Columns -->
+  <div id="story-builder">
+    <div class="column" id="col1">
+      <h2>Subject</h2>
+      <ul id="list1"></ul>
+      <button class="cycle-btn" data-col="1">Next</button>
+    </div>
+    <div class="column" id="col2">
+      <h2>Verb</h2>
+      <ul id="list2"></ul>
+      <button class="cycle-btn" data-col="2">Next</button>
+    </div>
+    <div class="column" id="col3">
+      <h2>Adjective</h2>
+      <ul id="list3"></ul>
+      <button class="cycle-btn" data-col="3">Next</button>
+    </div>
+    <div class="column" id="col4">
+      <h2>Noun</h2>
+      <ul id="list4"></ul>
+      <button class="cycle-btn" data-col="4">Next</button>
+    </div>
+    <div class="column" id="col5">
+      <h2>Place</h2>
+      <ul id="list5"></ul>
+      <button class="cycle-btn" data-col="5">Next</button>
+    </div>
+  </div>
+
+  <!-- Action Buttons -->
+  <div id="controls">
+    <button id="playback">Playback</button>
+    <button id="surprise">Surprise</button>
+  </div>
+
+  <!-- Display Final Sentence -->
+  <div id="result">
+    <h2>Your Story:</h2>
+    <p id="story-text">Click "Playback" or "Surprise" to create a story!</p>
+  </div>
+
+  <script src="hell.js"></script>
+</body>
+</html>
