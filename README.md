@@ -43,9 +43,9 @@ This project was created as part of a Georgian College Client-Side JavaScript as
 
 ## ✅ Assignment Checklist
 
-* [] Variables declared and initialized
-* [] Event listeners implemented
-* [] Functions created and used
-* [] DOM manipulated dynamically
-* [] Arrays used to store and manage phrases
-* [] Version controlled with Git and GitHub
+* [x] Variables declared and initialized
+* [x] Event listeners implemented
+* [x] Functions created and used
+* [x] DOM manipulated dynamically
+* [x] Arrays used to store and manage phrases
+* [x] Version controlled with Git and GitHub
