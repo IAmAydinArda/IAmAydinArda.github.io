@@ -18,7 +18,7 @@ h1 {
   justify-content: center;
   margin: 30px auto;
   gap: 10px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 /* === INDIVIDUAL COLUMN STYLING === */
@@ -127,4 +127,26 @@ h1 {
   font-size: 1.2em;
   font-weight: bold;
   color: #333;
+}
+
+/* === BETTER READABILITY ON SMALLER SCREENS === */
+
+@media (max-width: 360px) {
+  .column {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  #story-builder {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cycle-btn {
+    width: 80%;
+  }
+
+  #controls button {
+    width: 80%;
+  }
 }
