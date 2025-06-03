@@ -20,12 +20,29 @@ const listElements = [
 // === STORY TEXT OUTPUT ===
 const storyText = document.getElementById("story-text"); // Outputs the story text.
 
-// === FUNCTION TO DISPLAY CURRENT WORD IN EACH COLUMN ===
+// === FUNCTION TO DISPLAY WORDS IN EACH COLUMN ===
 function updateDisplay() {
   const wordArrays = [subjects, verbs, adjectives, nouns, places];
 
   for (let i = 0; i < listElements.length; i++) {
-    listElements[i].innerHTML = "<li>" + wordArrays[i][currentIndices[i]] + "</li>"; // Displays the current word in each column.
+    listElements[i].innerHTML = ""; // Clear list
+
+    for (let j = 0; j < wordArrays[i].length; j++) {
+      const li = document.createElement("li");
+      li.textContent = wordArrays[i][j];
+
+      // Add 'selected' class if it's the current one
+      if (j === currentIndices[i]) {
+        li.classList.add("selected");
+
+        // Smooth scroll into view
+        setTimeout(() => {
+          li.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 50);
+      }
+
+      listElements[i].appendChild(li);
+    }
   }
 }
 

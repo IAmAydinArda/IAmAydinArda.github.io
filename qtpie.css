@@ -18,7 +18,7 @@ h1 {
   justify-content: center;
   margin: 30px auto;
   gap: 10px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 /* === INDIVIDUAL COLUMN STYLING === */
@@ -29,6 +29,9 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Assign a unique background color to each column */
@@ -44,14 +47,26 @@ h1 {
 }
 
 /* === PHRASE LIST === */
-ul {
+.column ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  min-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+}
+
+.column li {
+  padding: 6px;
+  margin: 4px 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Highlight selected row */
+.column li.selected {
+  background-color: #fffa65;
+  border: 2px solid #222;
   font-weight: bold;
 }
 
